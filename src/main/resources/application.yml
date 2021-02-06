@@ -1,0 +1,17 @@
+zuul:
+  routes:
+    events:
+      path: /events/**
+      sensitiveHeaders:
+      url: http://localhost:8089/events
+    auth:
+      path: /auth/**
+      url: http://localhost:8090/auth
+    users:
+      path: /users/**
+      sensitiveHeaders:
+      url: http://localhost:8090/users
+
+eureka:
+  client:
+    enabled: false

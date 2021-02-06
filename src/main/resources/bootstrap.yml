@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: proxyserver
+
+server.port: 8651
+server.use-forward-headers: true
+zuul.addProxyHeaders: true
+server.compression.enabled: true
+endpoints.jmx.unique-names: true
+
+management.port: 9651
+management.context-path: /
+
+
