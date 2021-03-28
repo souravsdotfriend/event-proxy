@@ -16,7 +16,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.coordinator'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 sourceCompatibility = 1.8
 
 repositories {
@@ -26,6 +26,15 @@ repositories {
 
 ext {
 	springCloudVersion = 'Finchley.SR1'
+}
+
+jar {
+    manifest {
+        attributes "Main-Class": "com.coordinator.eventproxy.EventProxyApplication"
+    }
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
 
 dependencies {
