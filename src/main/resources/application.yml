@@ -3,18 +3,18 @@ zuul:
       events:
          path: /events/**
          sensitiveHeaders: null
-         url: http://localhost:8089/manager/events
+         url: http://13.235.114.254:8080/manager/events
       auth:
          path: /auth/**
-         url: http://localhost:8090/auth
+         url: http://65.0.183.171:8080/auth
       users:
          path: /users/**
          sensitiveHeaders: null
-         url: http://localhost:8090/users
+         url: http://65.0.183.171:8080/users
       analytics:
          path: /analytics/**
          sensitiveHeaders: null
-         url: http://localhost:8095/analytics
+         url: http://13.233.24.210:8080/analytics
 eureka:
    client:
       enabled: false

@@ -1,7 +1,7 @@
 spring:
    application:
       name: proxyserver
-server.port: 8651
+server.port: 8080
 server.use-forward-headers: true
 zuul.addProxyHeaders: true
 server.compression.enabled: true
