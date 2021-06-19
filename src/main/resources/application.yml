@@ -3,7 +3,7 @@ zuul:
       events:
          path: /events/**
          sensitiveHeaders: null
-         url: http://15.206.94.214:8080/manager/events
+         url: http://13.127.59.53:8080/manager/events
       auth:
          path: /auth/**
          url: http://65.0.183.171:8080/auth
