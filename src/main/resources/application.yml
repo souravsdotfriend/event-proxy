@@ -1,18 +1,18 @@
 zuul:
    routes:
       events:
-         path: /events/**
+         path: /api/events/**
          sensitiveHeaders: null
          url: http://13.127.59.53:8080/manager/events
       auth:
-         path: /auth/**
+         path: /api/auth/**
          url: http://65.0.183.171:8080/auth
       users:
-         path: /users/**
+         path: /api/users/**
          sensitiveHeaders: null
          url: http://65.0.183.171:8080/users
       analytics:
-         path: /analytics/**
+         path: /api/analytics/**
          sensitiveHeaders: null
          url: http://13.233.24.210:8080/analytics
 eureka:
