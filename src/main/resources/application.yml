@@ -1,18 +1,18 @@
 zuul:
    routes:
       events:
-         path: /events/**
+         path: /api/events/**
          sensitiveHeaders: null
          url: http://localhost:8089/manager/events
       auth:
-         path: /auth/**
+         path: /api/auth/**
          url: http://localhost:8090/auth
       users:
-         path: /users/**
+         path: /api/users/**
          sensitiveHeaders: null
          url: http://localhost:8090/users
       analytics:
-         path: /analytics/**
+         path: /api/analytics/**
          sensitiveHeaders: null
          url: http://localhost:8095/analytics
 eureka:
